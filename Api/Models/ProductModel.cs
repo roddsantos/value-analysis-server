@@ -1,5 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 
+using value_analysis_server.Api.Database;
+
 namespace value_analysis_server.Api.Models
 {
     public partial class Product
@@ -19,6 +21,8 @@ namespace value_analysis_server.Api.Models
         public int? provider4 { get; set; }
         [AllowNull]
         public string? selectedProvider { get; set; }
+        public DateTime created_at { get; set; }
+        public DateTime updated_at { get; set; }
 
     }
 }
