@@ -28,6 +28,8 @@ namespace value_analysis_server.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Order order)
         {
+            order.created_at = DateTime.Now;
+            order.updated_at = DateTime.Now;
             await _context.Orders.AddAsync(order);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(Get), new { id = order.id }, order);

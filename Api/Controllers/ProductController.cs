@@ -29,6 +29,7 @@ namespace value_analysis_backend.Api.Controllers
         {
             if (id != product.id) return BadRequest();
 
+            product.updated_at = DateTime.Now;
             _context.Entry(product).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
@@ -40,6 +41,7 @@ namespace value_analysis_backend.Api.Controllers
         {
             foreach (var product in products)
             {
+                product.updated_at = DateTime.Now;
                 _context.Entry(product).State = EntityState.Modified;
             }
             await _context.SaveChangesAsync();
