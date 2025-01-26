@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 using value_analysis_server.Api.Models;
 
-namespace value_analysis_backend.Api.Database
+namespace value_analysis_server.Api.Database
 {
     public class DBContext : DbContext
     {
