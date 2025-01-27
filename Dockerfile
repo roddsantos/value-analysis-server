@@ -11,5 +11,5 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/out ./
 
-EXPOSE 5071
+EXPOSE 5086
 ENTRYPOINT ["dotnet", "value-analysis-server.dll"]

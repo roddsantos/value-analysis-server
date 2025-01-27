@@ -36,7 +36,7 @@ namespace value_analysis_backend.Api.Controllers
             return NoContent();
         }
 
-        [HttpPut("batch")]
+        [HttpPatch("batch")]
         public async Task<IActionResult> UpdateBatch(List<Product> products)
         {
             foreach (var product in products)
