@@ -12,8 +12,8 @@ using value_analysis_server.Api.Database;
 namespace value_analysis_server.Migrations
 {
     [DbContext(typeof(DBContext))]
-    [Migration("20250126180739_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20250128011613_InitialMigrations")]
+    partial class InitialMigrations
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -83,20 +83,20 @@ namespace value_analysis_server.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int?>("provider1")
-                        .HasColumnType("int");
+                    b.Property<float?>("provider1")
+                        .HasColumnType("float");
 
-                    b.Property<int?>("provider2")
-                        .HasColumnType("int");
+                    b.Property<float?>("provider2")
+                        .HasColumnType("float");
 
-                    b.Property<int?>("provider3")
-                        .HasColumnType("int");
+                    b.Property<float?>("provider3")
+                        .HasColumnType("float");
 
-                    b.Property<int?>("provider4")
-                        .HasColumnType("int");
+                    b.Property<float?>("provider4")
+                        .HasColumnType("float");
 
-                    b.Property<int>("quantity")
-                        .HasColumnType("int");
+                    b.Property<float>("quantity")
+                        .HasColumnType("float");
 
                     b.Property<string>("selectedProvider")
                         .HasColumnType("longtext");
@@ -111,119 +111,119 @@ namespace value_analysis_server.Migrations
                     b.HasData(
                         new
                         {
-                            id = new Guid("2031301c-e1dc-4ac4-8433-ac4ee5beb342"),
+                            id = new Guid("f3c4cda2-f5ab-46f3-9b9e-a83939c6a4bb"),
                             code = "001",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1154),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3499),
                             description = "Especificação / Descrição do produto genérico 1",
                             name = "Product 1",
-                            provider1 = 100,
-                            provider2 = 100,
-                            provider3 = 100,
-                            provider4 = 100,
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1249)
+                            provider1 = 100f,
+                            provider2 = 100f,
+                            provider3 = 100f,
+                            provider4 = 100f,
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3585)
                         },
                         new
                         {
-                            id = new Guid("8fb81fa6-0daf-4e3f-8b8a-82f2c69930bc"),
+                            id = new Guid("40ce3dbe-8490-4174-96a5-0b9526c22c33"),
                             code = "002",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1329),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3663),
                             description = "Especificação / Descrição do produto genérico 2",
                             name = "Product 2",
-                            provider1 = 100,
-                            provider2 = 100,
-                            provider3 = 100,
-                            provider4 = 100,
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1330)
+                            provider1 = 100f,
+                            provider2 = 100f,
+                            provider3 = 100f,
+                            provider4 = 100f,
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3664)
                         },
                         new
                         {
-                            id = new Guid("dc035e4d-f889-4961-aa2f-4df046fd6831"),
+                            id = new Guid("9bf5b1a2-b749-4012-b7df-63fa67c675c1"),
                             code = "003",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1333),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3667),
                             description = "Especificação / Descrição do produto genérico 3",
                             name = "Product 3",
-                            provider1 = 100,
-                            provider2 = 100,
-                            provider3 = 100,
-                            provider4 = 100,
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1334)
+                            provider1 = 100f,
+                            provider2 = 100f,
+                            provider3 = 100f,
+                            provider4 = 100f,
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3668)
                         },
                         new
                         {
-                            id = new Guid("a55ffbaa-9188-4bc6-86d4-d82464c79170"),
+                            id = new Guid("8bf1c81b-1d2c-4d0c-9ded-08e0cbb92e78"),
                             code = "004",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1336),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3671),
                             description = "Especificação / Descrição do produto genérico 4",
                             name = "Product 4",
-                            provider1 = 100,
-                            provider2 = 100,
-                            provider3 = 100,
-                            provider4 = 100,
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1337)
+                            provider1 = 100f,
+                            provider2 = 100f,
+                            provider3 = 100f,
+                            provider4 = 100f,
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3671)
                         },
                         new
                         {
-                            id = new Guid("ac2d96f9-afe9-4fa8-b962-9969b09e9d7f"),
+                            id = new Guid("25f13797-5a4e-47f9-89ae-082090d7a665"),
                             code = "005",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1339),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3674),
                             description = "Especificação / Descrição do produto genérico 5",
                             name = "Product 5",
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1339)
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3674)
                         },
                         new
                         {
-                            id = new Guid("d27386cf-3769-46a6-864a-4229b668bc81"),
+                            id = new Guid("358537b8-6340-47d5-bb0e-2572e850eced"),
                             code = "006",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1350),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3676),
                             description = "Especificação / Descrição do produto genérico 6",
                             name = "Product 6",
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1350)
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3676)
                         },
                         new
                         {
-                            id = new Guid("b08d2b45-8f69-4312-9335-ff01b2cf80f4"),
+                            id = new Guid("24c641c8-fa3b-45fa-bc9f-2bb64262d29c"),
                             code = "007",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1353),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3686),
                             description = "Especificação / Descrição do produto genérico 7",
                             name = "Product 7",
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1353)
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3686)
                         },
                         new
                         {
-                            id = new Guid("4b28aa95-eaa0-4e3f-9fe0-8b8c8380cd50"),
+                            id = new Guid("3286c127-dd88-4301-a82a-dfbe40c5c98a"),
                             code = "008",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1355),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3688),
                             description = "Especificação / Descrição do produto genérico 8",
                             name = "Product 8",
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1356)
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3689)
                         },
                         new
                         {
-                            id = new Guid("b245d408-dfbd-46d4-b2e2-0cd43357b85d"),
+                            id = new Guid("9b74b628-a3b5-4fad-9335-5c0fbe25ee3c"),
                             code = "009",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1358),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3691),
                             description = "Especificação / Descrição do produto genérico 9",
                             name = "Product 9",
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1358)
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3691)
                         },
                         new
                         {
-                            id = new Guid("adfde6a5-c35f-4204-b730-7de18bde1b30"),
+                            id = new Guid("8d4aa177-dcca-415d-ad4e-20a3b6478ae3"),
                             code = "010",
-                            created_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1360),
+                            created_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3694),
                             description = "Especificação / Descrição do produto genérico 10",
                             name = "Product 10",
-                            quantity = 100,
-                            updated_at = new DateTime(2025, 1, 26, 14, 7, 37, 331, DateTimeKind.Local).AddTicks(1361)
+                            quantity = 100f,
+                            updated_at = new DateTime(2025, 1, 27, 21, 16, 11, 763, DateTimeKind.Local).AddTicks(3694)
                         });
                 });
 #pragma warning restore 612, 618
