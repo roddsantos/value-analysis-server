@@ -13,6 +13,7 @@ services:
       - MYSQL_DATABASE=value-analysis-database
       - MYSQL_PASSWORD=root123
       - MYSQL_ROOT_HOST=%
+      - MYSQL_USER=root
     ports:
       - "3307:3306"
     networks:
