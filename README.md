@@ -13,7 +13,14 @@ MYSQL_USER=<database username>
 MYSQL_PASSWORD=<database password (if used)>
 ```
 
-After this, you can use the follow docker command to create the containers
+After this, enter your root project you can use the follow command to initialize the database
+
+```bash
+$ dotnet ef migrations InitialMigrations;
+$ dotnet ef database update;
+```
+
+... and this docker command to create the containers
 
 ```bash
 $ docker-compose up
